@@ -17,6 +17,8 @@ The Reachy Robot by Pollen Robotics is an advanced and versatile humanoid robot 
 
 ## Setup
 
+Python 3.6 is recommended
+
 ## Installation
 
 1. Clone this repository to your local machine:
