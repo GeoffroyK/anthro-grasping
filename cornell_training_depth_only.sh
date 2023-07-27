@@ -14,6 +14,5 @@ python main.py \
     --batches-per-epoch 200\
     --val-batches 32 \
     --description "Learning on the cornell dataset with 10% of the dataset removed for cross validation, only depth" \
-    --outdir output/cornell_2 \
-    --logdir cornell_2
-    
+    --outdir output/cornell_depth_only \
+    --logdir cornell_depth_only  
