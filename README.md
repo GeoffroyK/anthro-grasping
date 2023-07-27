@@ -1,7 +1,7 @@
 # Grasping with Reachy using a Transformer 
 Geoffroy Keime | Internship at Pollen Robotics
 
-![Reachy Robot](disasterclass.png)
+![Reachy Robot](img/disasterclass.png)
 
 This repository aims to implement grasping capabilities for the Reachy Robot from Pollen Robotics using a transformer-based model (https://github.com/WangShaoSUN/grasp-transformer). The goal is to enable Reachy, an anthropomorhic robot,  to grasp and manipulate objects. 
 
