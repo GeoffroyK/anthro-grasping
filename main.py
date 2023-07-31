@@ -7,7 +7,7 @@ import torch
 import torch.utils.data
 import torch.optim as optim
 from torchsummary import summary
-from traning import train, validate
+from training import train, validate
 from utils.data import get_dataset
 from models.swin import SwinTransformerSys
 
@@ -187,9 +187,13 @@ def run():
             test_results["correct"] + test_results["failed"]
         )
 
+        #Train results 
         writer.add_scalar("Mean Loss / Epoch", mean_loss, epoch)
-        writer.add_scalar("loss", test_results["loss"], epoch)
-
+        writer.add_scalar("training loss", train_results["loss"])
+        
+        #Validation results
+        writer.add_scalar("val loss", test_results["loss"], epoch)
+        writer.add_scalar("val iou", (test_results["correct"] / (test_results["correct"] + test_results["failed"])))
         writer.add_scalar("loss/val_loss", test_results["loss"], epoch)
         for n, l in test_results["losses"].items():
             writer.add_scalar("val_loss/" + n, l, epoch)
